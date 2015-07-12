@@ -35,10 +35,6 @@ web site</a>:
 
 ## Loading the data
 
-
-
-
-
 When loading the dataset into R, please consider the following:
 
 * The dataset has 2,075,259 rows and 9 columns. First
@@ -112,3 +108,10 @@ The four plots that you will need to construct are shown below.
 
 ![plot of chunk unnamed-chunk-5](figure/unnamed-chunk-5.png) 
 
+### Comments from ramparth
+* read the data from text file to data1 object
+* Converted the data time field from vector to character. this was first step to use the lubridate methods for date formating
+* used dplyr mutate method to add datatime column which is after concatinating the date and time column
+* converted the new datetime column to Date/Time
+* converted the variables needed for plotting from vector to numeric
+* plotted the graphs as per above instructions and created seperate png files for them
